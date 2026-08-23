@@ -1,0 +1,45 @@
+# ── Secrets / API keys ────────────────────────────────
+.env
+*.key
+secrets.json
+**/api_key*
+
+# ── Data (배포 금지: 원 출처에서 직접 다운로드) ──────────
+data/
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.csv
+*.tsv
+거리영상*/
+images/
+json/
+
+# ── SVI pipeline intermediate outputs ─────────────────
+svi_captions.json
+svi_embeddings.npy
+svi_keywords*.json
+sim_matrix*.npy
+adj_visual.pt
+adj_adapt.pt
+
+# ── Model checkpoints / results ───────────────────────
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+bl_results.json
+bl_multistep_results.json
+ablation_results.json
+*_ablation/
+
+# ── Notebook / Python cruft ───────────────────────────
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# ── Allow the architecture figure through ─────────────
+!docs/model_architecture.png
